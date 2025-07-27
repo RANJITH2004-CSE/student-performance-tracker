@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Performance Tracker</title>
+  <link rel="stylesheet" href="../static/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <i class="fas fa-chart-bar"></i>
+      Student Performance Tracker
+    </div>
+    <div class="theme-icon">
+      <i class="fas fa-moon"></i>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="upload-section">
+      <i class="fas fa-upload"></i>
+      <h2>Upload Student Data</h2>
+      <p>Upload an Excel file (.xlsx) containing student names and subject marks</p>
+      
+      <input type="file" id="fileInput" />
+      <button class="upload-btn" onclick="uploadFile()">Upload</button>
+    </div>
+
+    <!-- ✅ Results will show here -->
+    <div class="output-section">
+      <pre id="output">No data uploaded yet.</pre>
+    </div>
+  </div>
+
+  <script src="../static/script.js"></script>
+</body>
+</html>
